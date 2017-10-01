@@ -44,7 +44,6 @@
                             </view>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfk-nl-CrT" userLabel="Cancel Clear">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" red="0.91716544266393263" green="0.73592689349868134" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="cancelClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Ca-8z-GiA"/>
                                 </connections>
@@ -63,6 +62,17 @@
                                     <action selector="clearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4iI-pE-pih"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7v-s5-LI2" userLabel="Normal Counter">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.91716544266393263" green="0.73592689349868134" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="100"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="normalCountButtonTapped:" destination="BYZ-38-t0r" eventType="touchDown" id="54t-xG-dPt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
@@ -73,8 +83,12 @@
                             <constraint firstItem="3e2-1h-rlL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ba2-pO-MXF"/>
                             <constraint firstItem="ZQa-UZ-vpY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DLe-31-GZC"/>
                             <constraint firstItem="3e2-1h-rlL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aWU-kt-4aD"/>
+                            <constraint firstItem="Z7v-s5-LI2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aez-9L-8Ap"/>
+                            <constraint firstItem="Z7v-s5-LI2" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="gLT-QO-p2n"/>
                             <constraint firstItem="xfk-nl-CrT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hw6-Zu-Ayr"/>
+                            <constraint firstItem="Z7v-s5-LI2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="olH-uG-alX"/>
                             <constraint firstItem="xfk-nl-CrT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pnW-sG-pBf"/>
+                            <constraint firstItem="Z7v-s5-LI2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="roP-wc-ShQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <connections>
@@ -85,6 +99,8 @@
                         <outlet property="cancelClear" destination="xfk-nl-CrT" id="yPf-9d-KnJ"/>
                         <outlet property="clearButton" destination="3e2-1h-rlL" id="aeW-8M-ACV"/>
                         <outlet property="countLabel" destination="ZQa-UZ-vpY" id="Ld1-8f-C1P"/>
+                        <outlet property="normalCountButton" destination="Z7v-s5-LI2" id="iIn-rF-2iz"/>
+                        <outlet property="swipeLeft" destination="lGc-g6-zAl" id="YmX-7i-J6W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
