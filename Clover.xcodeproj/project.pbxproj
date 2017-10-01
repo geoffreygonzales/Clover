@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		776061741F814EF70035316C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776061731F814EF70035316C /* AppDelegate.swift */; };
+		776061761F814EF70035316C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776061751F814EF70035316C /* ViewController.swift */; };
+		776061791F814EF70035316C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 776061771F814EF70035316C /* Main.storyboard */; };
+		7760617B1F814EF70035316C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7760617A1F814EF70035316C /* Assets.xcassets */; };
+		7760617E1F814EF70035316C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7760617C1F814EF70035316C /* LaunchScreen.storyboard */; };
+		776061891F814EF70035316C /* CloverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776061881F814EF70035316C /* CloverTests.swift */; };
+		776061941F814EF70035316C /* CloverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776061931F814EF70035316C /* CloverUITests.swift */; };
+		776061A51F814FD60035316C /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776061A41F814FD60035316C /* Button.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		776061851F814EF70035316C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 776061681F814EF70035316C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7760616F1F814EF70035316C;
+			remoteInfo = Clover;
+		};
+		776061901F814EF70035316C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 776061681F814EF70035316C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7760616F1F814EF70035316C;
+			remoteInfo = Clover;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		776061701F814EF70035316C /* Clover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clover.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		776061731F814EF70035316C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		776061751F814EF70035316C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		776061781F814EF70035316C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7760617A1F814EF70035316C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7760617D1F814EF70035316C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7760617F1F814EF70035316C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		776061841F814EF70035316C /* CloverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		776061881F814EF70035316C /* CloverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloverTests.swift; sourceTree = "<group>"; };
+		7760618A1F814EF70035316C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7760618F1F814EF70035316C /* CloverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		776061931F814EF70035316C /* CloverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloverUITests.swift; sourceTree = "<group>"; };
+		776061951F814EF70035316C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		776061A41F814FD60035316C /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7760616D1F814EF70035316C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		776061811F814EF70035316C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7760618C1F814EF70035316C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		776061671F814EF70035316C = {
+			isa = PBXGroup;
+			children = (
+				776061721F814EF70035316C /* Clover */,
+				776061871F814EF70035316C /* CloverTests */,
+				776061921F814EF70035316C /* CloverUITests */,
+				776061711F814EF70035316C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		776061711F814EF70035316C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				776061701F814EF70035316C /* Clover.app */,
+				776061841F814EF70035316C /* CloverTests.xctest */,
+				7760618F1F814EF70035316C /* CloverUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		776061721F814EF70035316C /* Clover */ = {
+			isa = PBXGroup;
+			children = (
+				776061A31F814F780035316C /* View */,
+				776061731F814EF70035316C /* AppDelegate.swift */,
+				7760617A1F814EF70035316C /* Assets.xcassets */,
+				7760617C1F814EF70035316C /* LaunchScreen.storyboard */,
+				7760617F1F814EF70035316C /* Info.plist */,
+			);
+			path = Clover;
+			sourceTree = "<group>";
+		};
+		776061871F814EF70035316C /* CloverTests */ = {
+			isa = PBXGroup;
+			children = (
+				776061881F814EF70035316C /* CloverTests.swift */,
+				7760618A1F814EF70035316C /* Info.plist */,
+			);
+			path = CloverTests;
+			sourceTree = "<group>";
+		};
+		776061921F814EF70035316C /* CloverUITests */ = {
+			isa = PBXGroup;
+			children = (
+				776061931F814EF70035316C /* CloverUITests.swift */,
+				776061951F814EF70035316C /* Info.plist */,
+			);
+			path = CloverUITests;
+			sourceTree = "<group>";
+		};
+		776061A31F814F780035316C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				776061771F814EF70035316C /* Main.storyboard */,
+				776061751F814EF70035316C /* ViewController.swift */,
+				776061A41F814FD60035316C /* Button.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7760616F1F814EF70035316C /* Clover */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 776061981F814EF70035316C /* Build configuration list for PBXNativeTarget "Clover" */;
+			buildPhases = (
+				7760616C1F814EF70035316C /* Sources */,
+				7760616D1F814EF70035316C /* Frameworks */,
+				7760616E1F814EF70035316C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Clover;
+			productName = Clover;
+			productReference = 776061701F814EF70035316C /* Clover.app */;
+			productType = "com.apple.product-type.application";
+		};
+		776061831F814EF70035316C /* CloverTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7760619B1F814EF70035316C /* Build configuration list for PBXNativeTarget "CloverTests" */;
+			buildPhases = (
+				776061801F814EF70035316C /* Sources */,
+				776061811F814EF70035316C /* Frameworks */,
+				776061821F814EF70035316C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				776061861F814EF70035316C /* PBXTargetDependency */,
+			);
+			name = CloverTests;
+			productName = CloverTests;
+			productReference = 776061841F814EF70035316C /* CloverTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7760618E1F814EF70035316C /* CloverUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7760619E1F814EF70035316C /* Build configuration list for PBXNativeTarget "CloverUITests" */;
+			buildPhases = (
+				7760618B1F814EF70035316C /* Sources */,
+				7760618C1F814EF70035316C /* Frameworks */,
+				7760618D1F814EF70035316C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				776061911F814EF70035316C /* PBXTargetDependency */,
+			);
+			name = CloverUITests;
+			productName = CloverUITests;
+			productReference = 7760618F1F814EF70035316C /* CloverUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		776061681F814EF70035316C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Sunlight;
+				TargetAttributes = {
+					7760616F1F814EF70035316C = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					776061831F814EF70035316C = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7760616F1F814EF70035316C;
+					};
+					7760618E1F814EF70035316C = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7760616F1F814EF70035316C;
+					};
+				};
+			};
+			buildConfigurationList = 7760616B1F814EF70035316C /* Build configuration list for PBXProject "Clover" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 776061671F814EF70035316C;
+			productRefGroup = 776061711F814EF70035316C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7760616F1F814EF70035316C /* Clover */,
+				776061831F814EF70035316C /* CloverTests */,
+				7760618E1F814EF70035316C /* CloverUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7760616E1F814EF70035316C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7760617E1F814EF70035316C /* LaunchScreen.storyboard in Resources */,
+				7760617B1F814EF70035316C /* Assets.xcassets in Resources */,
+				776061791F814EF70035316C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		776061821F814EF70035316C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7760618D1F814EF70035316C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7760616C1F814EF70035316C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				776061761F814EF70035316C /* ViewController.swift in Sources */,
+				776061A51F814FD60035316C /* Button.swift in Sources */,
+				776061741F814EF70035316C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		776061801F814EF70035316C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				776061891F814EF70035316C /* CloverTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7760618B1F814EF70035316C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				776061941F814EF70035316C /* CloverUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		776061861F814EF70035316C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7760616F1F814EF70035316C /* Clover */;
+			targetProxy = 776061851F814EF70035316C /* PBXContainerItemProxy */;
+		};
+		776061911F814EF70035316C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7760616F1F814EF70035316C /* Clover */;
+			targetProxy = 776061901F814EF70035316C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		776061771F814EF70035316C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				776061781F814EF70035316C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7760617C1F814EF70035316C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7760617D1F814EF70035316C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		776061961F814EF70035316C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		776061971F814EF70035316C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		776061991F814EF70035316C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9TNRAEHQ5Q;
+				INFOPLIST_FILE = Clover/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sunlight.Clover;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7760619A1F814EF70035316C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9TNRAEHQ5Q;
+				INFOPLIST_FILE = Clover/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sunlight.Clover;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7760619C1F814EF70035316C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9TNRAEHQ5Q;
+				INFOPLIST_FILE = CloverTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sunlight.CloverTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clover.app/Clover";
+			};
+			name = Debug;
+		};
+		7760619D1F814EF70035316C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9TNRAEHQ5Q;
+				INFOPLIST_FILE = CloverTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sunlight.CloverTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clover.app/Clover";
+			};
+			name = Release;
+		};
+		7760619F1F814EF70035316C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9TNRAEHQ5Q;
+				INFOPLIST_FILE = CloverUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sunlight.CloverUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Clover;
+			};
+			name = Debug;
+		};
+		776061A01F814EF70035316C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9TNRAEHQ5Q;
+				INFOPLIST_FILE = CloverUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sunlight.CloverUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Clover;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7760616B1F814EF70035316C /* Build configuration list for PBXProject "Clover" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				776061961F814EF70035316C /* Debug */,
+				776061971F814EF70035316C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		776061981F814EF70035316C /* Build configuration list for PBXNativeTarget "Clover" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				776061991F814EF70035316C /* Debug */,
+				7760619A1F814EF70035316C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7760619B1F814EF70035316C /* Build configuration list for PBXNativeTarget "CloverTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7760619C1F814EF70035316C /* Debug */,
+				7760619D1F814EF70035316C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7760619E1F814EF70035316C /* Build configuration list for PBXNativeTarget "CloverUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7760619F1F814EF70035316C /* Debug */,
+				776061A01F814EF70035316C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 776061681F814EF70035316C /* Project object */;
+}
