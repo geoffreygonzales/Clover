@@ -26,7 +26,7 @@ class ViewController : UIViewController
           var impactFinished = false
           let generatorHeavy = UIImpactFeedbackGenerator(style: .heavy)
           let generatorLight = UIImpactFeedbackGenerator(style : .light)
-          let pressureThreshold : CGFloat = 0.65
+          let pressureThreshold : CGFloat = 0.45
           
           override func viewDidLoad()
           {
@@ -40,7 +40,7 @@ class ViewController : UIViewController
                               print("haptic is avaliable")
                     }
                     
-                    updateLabel(text: "hi")
+                    updateLabel(text: "0")
           }
           
           // Passing In Value To Lable And Displaying It
@@ -128,11 +128,13 @@ class ViewController : UIViewController
                     generator.notificationOccurred(.error)
           }
           
+          // Preparing The Haptic Generator When The Screen Is First Touched
           override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
           {
                     prepareImpact()
           }
           
+          // Getting The Value Of The Force That The Screen Is Pressed
           override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?)
           {
                     if let touch = touches.first, #available(iOS 9.0, *), traitCollection.forceTouchCapability == UIForceTouchCapability.available
@@ -168,12 +170,14 @@ class ViewController : UIViewController
                     }
           }
           
+          // Button For Counting On Devices Without Haptic Feedback
           @IBAction func normalCountButtonTapped(_ sender: UIButton)
           {
                     countOne()
                     buzz()
           }
           
+          // Shows Clear Button And Cancel Button
           @IBAction func swipeLeft(_ sender: Any)
           {
                     if count != 0, hapticAvaliable == true
@@ -192,7 +196,7 @@ class ViewController : UIViewController
           // Phone Is Shaken
           override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?)
           {
-                    if count != 0
+                    if count != 0, hapticAvaliable == false
                     {
                               normalCountButton.isHidden = true
                               countLabel.isHidden = true
@@ -206,6 +210,7 @@ class ViewController : UIViewController
                     }
           }
           
+          // Clear The Counter
           @IBAction func clearButton(_ sender: UIButton)
           {
                     count = 0
@@ -218,9 +223,10 @@ class ViewController : UIViewController
                     impactClear()
                     buzzBuzz()
           
-                    print("clear pressed")
+                    print("cleared")
           }
           
+          // Cancel Clear UI Going Back To Counting UI
           @IBAction func cancelClear(_ sender: UIButton)
           {
                     if hapticAvaliable == false
