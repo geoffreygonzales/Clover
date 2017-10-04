@@ -9,6 +9,7 @@
 import UIKit
 import AudioToolbox
 import CoreMotion
+import CoreData
 
 class ViewController : UIViewController
 {
@@ -21,16 +22,19 @@ class ViewController : UIViewController
           // Universal Objects
           var count = 0
           var hapticAvaliable = false
+          var onboardingCompleted = false
           
           // 3D Touch Objects
           var impactFinished = false
           let generatorHeavy = UIImpactFeedbackGenerator(style: .heavy)
           let generatorLight = UIImpactFeedbackGenerator(style : .light)
-          let pressureThreshold : CGFloat = 0.45
+          let pressureThreshold : CGFloat = 0.40
           
           override func viewDidLoad()
           {
                     super.viewDidLoad()
+                    
+                    isOnboardingCompleted()
                     
                     if  #available(iOS 9.0, *),  traitCollection.forceTouchCapability == UIForceTouchCapability.available
                     {
@@ -41,6 +45,27 @@ class ViewController : UIViewController
                     }
                     
                     updateLabel(text: "0")
+          }
+          
+          func isOnboardingCompleted()
+          {
+                    let fetchRequest : NSFetchRequest<Onboard> = Onboard.fetchRequest()
+                    var onboardingResult = [Onboard]()
+                    
+//                    do
+//                    {
+//                              onboardingResult = try context.fetch(fetchRequest)
+//                              let result = onboardingResult[0].hasBeenCompleted
+//                              if result != nil {
+//                              onboardingCompleted = result
+//                              print("onboarding completed = \(result)")
+//                              }
+//                    }
+//                    catch
+//                    {
+//                              print("unable to check if onboarding has been completed. error: \(error.localizedDescription)")
+//                    }
+
           }
           
           // Passing In Value To Lable And Displaying It

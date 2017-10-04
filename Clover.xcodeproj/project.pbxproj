@@ -14,6 +14,7 @@
 		7760617E1F814EF70035316C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7760617C1F814EF70035316C /* LaunchScreen.storyboard */; };
 		776061891F814EF70035316C /* CloverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776061881F814EF70035316C /* CloverTests.swift */; };
 		776061941F814EF70035316C /* CloverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776061931F814EF70035316C /* CloverUITests.swift */; };
+		77A7F4651F844596001D635D /* Clover.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77A7F4631F844596001D635D /* Clover.xcdatamodeld */; };
 		77F78EC61F83507800572431 /* To DO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F78EC51F83507800572431 /* To DO.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		7760618F1F814EF70035316C /* CloverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		776061931F814EF70035316C /* CloverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloverUITests.swift; sourceTree = "<group>"; };
 		776061951F814EF70035316C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77A7F4641F844596001D635D /* Clover.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Clover.xcdatamodel; sourceTree = "<group>"; };
 		77F78EC51F83507800572431 /* To DO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "To DO.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,10 +102,11 @@
 			isa = PBXGroup;
 			children = (
 				776061A31F814F780035316C /* View */,
-				776061731F814EF70035316C /* AppDelegate.swift */,
-				7760617A1F814EF70035316C /* Assets.xcassets */,
+				77A7F46A1F8449E4001D635D /* Model */,
 				7760617C1F814EF70035316C /* LaunchScreen.storyboard */,
+				776061731F814EF70035316C /* AppDelegate.swift */,
 				7760617F1F814EF70035316C /* Info.plist */,
+				7760617A1F814EF70035316C /* Assets.xcassets */,
 			);
 			path = Clover;
 			sourceTree = "<group>";
@@ -134,6 +137,14 @@
 				77F78EC51F83507800572431 /* To DO.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		77A7F46A1F8449E4001D635D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				77A7F4631F844596001D635D /* Clover.xcdatamodeld */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +283,7 @@
 			files = (
 				776061761F814EF70035316C /* ViewController.swift in Sources */,
 				77F78EC61F83507800572431 /* To DO.swift in Sources */,
+				77A7F4651F844596001D635D /* Clover.xcdatamodeld in Sources */,
 				776061741F814EF70035316C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -570,6 +582,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		77A7F4631F844596001D635D /* Clover.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				77A7F4641F844596001D635D /* Clover.xcdatamodel */,
+			);
+			currentVersion = 77A7F4641F844596001D635D /* Clover.xcdatamodel */;
+			path = Clover.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 776061681F814EF70035316C /* Project object */;
 }
